@@ -1,0 +1,45 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="Author" content="Thomas Gries">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en]C-CCK-MCD QXW0323l  (Win95; U) [Netscape]">
+   <title>VIAF bookmarklet jump page</title>
+</head>
+<body text="#000000" bgcolor="#FFFFCC" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+<h2>VIAF bookmarklet installation page</h2>
+This page offers a bookmarklet which can be installed as bookmark in your browser for detection of VIAF numbers on web pages when clicking then on it.<br/>
+<br/>
+<div style="margin:1em;padding:1em;background:salmon;font-weight:bold;color:white" >
+General warning:<br/>
+Adding of bookmarklets from other sources can be dangerous if the source and server of Javascript cannot be trusted.<br/>
+Bookmarklets can reload further scripts which can be malicious.<br/>
+Bookmarklets and further scripts can possibly access your local information.
+</div>
+<br/>
+The scripts on this page are safe. T. Gries
+<br/>
+<br/>
+<ul>
+<li><a 
+style="border:1px outset #ddd; padding: 1px; vertical-align:1px;background: #ddd; text-decoration: none; font-family: sans-serif; font-size: 80%; color: darkgreen;" 
+href="javascript:(function(b){if(window.bookmarklet==undefined||window.bookmarklet.executeMyBookmarklet==undefined){var s=document.createElement('script');s.type='text/javascript';s.src=b+'?'+Math.floor(Math.random()*99999);if(!document.attachEvent){s.onload=function(){window.bookmarklet.executeMyBookmarklet()}}else{s.onreadystatechange=function(){if(s.readyState=='complete'||s.readyState=='loaded'){window.bookmarklet.executeMyBookmarklet();s.onreadystatechange=null}}}document.body.appendChild(s)}else{window.bookmarklet.executeMyBookmarklet()}})('http://svn.wikimedia.org/svnroot/mediawiki/trunk/tools/viaf/viaf.bookmarklet.js');void 0;">
+VIAF</a> &larr; bookmarklet</li>
+&larr; left-click, keep it and drag and drop that to your Firefox or Chrome bookmark bar ("Lesezeichen-Symbolleiste")<br/>
+&larr; Internet Explorer users right-click and install ("Add as favorite") in the favorite bar ("Favorite bar")<br/>
+&larr; (de) Internet Explorer rechts klicken > "Zu Favoriten hinzufügen..." > "Möchten Sie diesen Vorgang fortsetzen?" (Ja) > "Favoritenleiste" (!) auswählen 
+
+<li><a href="https://commons.wikimedia.org/wiki/Commons:VIAF_inter_project_linking/Tools#Bookmarklet">Documentation</a></li>
+<li><a href="https://svn.wikimedia.org/viewvc/mediawiki/trunk/tools/viaf/">Sources</a></li>
+<li><a href="https://svn.wikimedia.org/viewvc/mediawiki/trunk/tools/viaf/viaf.js?view=log">viaf.js</a> - track code changes in SVN</li>
+</ul>
+<hr>
+The bookmarklet can be tested by visiting pages like <i>(visit the page and then click the bookmarklet in your browser)</i><br/>
+VIAF:<a href="http://viaf.org/viaf/75121530/">75121530</a><br/>
+VIAF:54151065<br/><br/>
+Test on Wikipedia <i>(visit that page and then click the bookmarklet in your browser)</i>:<br/>
+<a href="https://de.wikipedia.org/wiki/Sabine_Ludwig">Sabine Ludwig</a> on Wikipedia
+<hr>
+Initial 20120426 - last updated 20120503
+</body>
+</html>
